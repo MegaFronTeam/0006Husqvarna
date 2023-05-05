@@ -48,7 +48,7 @@
 			line-height: rem(50px);
 			svg{
 				color: transparent;
-				stroke: $primary;
+				stroke: var(--bs-primary);
 				//stroke: green;
 				font-size: rem(12px);
 				margin-right: rem(10px);

@@ -66,13 +66,13 @@ html {
 		padding-bottom: rem(39);
 	}
 
-	padding-bottom: rem(39 / 2);
+	padding-bottom: rem(39 * 0.5);
 
 	letter-spacing: normal;
 
 	h2 {
 		text-transform: uppercase;
-		@extend .text-dark;
+		@extend .text-dark !optional;
 	}
 }
 
@@ -478,7 +478,7 @@ input::-webkit-inner-spin-button {
 
 		&-active,
 		&:hover {
-			background-color: $primary;
+			background-color: var(--bs-primary);
 		}
 	}
 }
@@ -567,7 +567,7 @@ iframe {
 	&:hover {
 
 		background-color: transparent !important;
-		border-color: $primary !important;
+		border-color: var(--bs-primary) !important;
 	}
 
 }
@@ -576,7 +576,7 @@ iframe {
 	margin-left: auto;
 	margin-right: auto;
 	@extend .btn;
-	@extend .btn-block;
+	@extend .btn-block !optional;
 	@extend .btn-outline-light;
 	width: rem(220);
 	color: $body-color;
@@ -585,7 +585,7 @@ iframe {
 		font-size: rem(8);
 		margin-left: rem(5);
 		color: transparent;
-		stroke: $primary;
+		stroke: var(--bs-primary);
 		stroke-width: 1px;
 	}
 }
@@ -598,13 +598,13 @@ iframe {
 	&-prev {
 		&:after {
 			@include mt;
-			color: $dark;
+			color: var(--bs-dark);
 			font-size: rem(28);
 		}
 
 		&:hover {
 			&::after {
-				color: $primary;
+				color: var(--bs-primary);
 			}
 		}
 	}
@@ -612,10 +612,10 @@ iframe {
 
 .link-dark {
 	@include mt;
-	color: $dark;
+	color: var(--bs-dark);
 
 	&:hover {
-		color: $primary;
+		color: var(--bs-primary);
 	}
 }
 
@@ -660,14 +660,14 @@ iframe {
 			text-transform: uppercase;
 			font-size: rem(14.9px);
 			padding-right: rem(30px);
-			color: $dark;
+			color: var(--bs-dark);
 		}
 
 		&.active {
 
 			//background-color: red;
 			a {
-				color: $primary;
+				color: var(--bs-primary);
 			}
 		}
 	}
@@ -701,12 +701,12 @@ iframe {
 			line-height: rem(25px);
 			font-size: rem(16px);
 			padding-right: rem(10px);
-			color: $dark;
+			color: var(--bs-dark);
 		}
 
 		&.active {
 			a {
-				color: $primary;
+				color: var(--bs-primary);
 			}
 		}
 	}
@@ -730,7 +730,7 @@ iframe {
 		.page-numbers {
 			background-color: white;
 			border-color: $light;
-			color: $dark;
+			color: var(--bs-dark);
 			height: rem(40px);
 			font-size: rem(18px);
 
@@ -739,15 +739,15 @@ iframe {
 			padding: 0 rem(15px);
 
 			&:hover {
-				box-shadow: 0px 0px 9px -6px $dark;
+				box-shadow: 0px 0px 9px -6px var(--bs-dark);
 				transform: scale(1.02);
 				background-color: $light;
-				color: $dark;
+				color: var(--bs-dark);
 			}
 
 			&.current {
-				background-color: $dark;
-				border-color: $dark;
+				background-color: var(--bs-dark);
+				border-color: var(--bs-dark);
 				color: white;
 				transform: scale(1);
 			}
@@ -765,7 +765,7 @@ iframe {
 				box-shadow: none;
 
 				svg {
-					stroke: $dark;
+					stroke: var(--bs-dark);
 					color: transparent;
 					line-height: rem(40px);
 					font-size: rem(28px);
@@ -804,7 +804,7 @@ iframe {
 
 .order-bnt {
 	color: white;
-	background-color: $primary;
+	background-color: var(--bs-primary);
 	border: none;
 	margin-top: rem(15px);
 	outline: none !important;
@@ -813,18 +813,18 @@ iframe {
 	@include mt();
 	&:hover {
 		//color: white;
-		//background-color: $primary;
-		//box-shadow: 0px 0px 12px -3px darken($primary, 10);
+		//background-color: var(--bs-primary);
+		//box-shadow: 0px 0px 12px -3px darken(var(--bs-primary), 10);
 		color: #fff;
-		background-color: #e23f0c;
-		border-color: #d53c0c;
+		background-color: var(--bs-primary-dark,#e23f0c);
+		border-color:  var(--bs-primary-dark,#d53c0c);
 	}
 
 	&:active {
-		//box-shadow: 0px 0px 6px -3px darken($primary, 10), inset 0px 0px 12px -5px black;
+		//box-shadow: 0px 0px 6px -3px darken(var(--bs-primary), 10), inset 0px 0px 12px -5px black;
 		color: #fff;
-		background-color: #d53c0c;
-		border-color: #c9380b;
+		background-color:  var(--bs-primary-dark,#d53c0c);
+		border-color:  var(--bs-primary-dark,#c9380b);
 	}
 }
 
@@ -862,3 +862,24 @@ iframe {
 .prod-item__price--old{
 	min-height: 1.222222rem;
 }
+.prod-item__btn{
+	display: block;
+}
+.btn-primary{
+	--bs-btn-color: #fff;
+	--bs-btn-hover-color: var(--bs-btn-color); 
+	--bs-btn-active-color: var(--bs-btn-color); 
+	--bs-btn-disabled-color: var(--bs-btn-color);
+}
+
+.btn-block{
+	display: block;
+	width: 100%;
+}
+// .btn-more:hover, .btn:hover, .dropdown-city__btn:hover, .dropdown-phone__btn:hover, .form-wrap__btn:hover, .headerBlock__btn:hover, .prod-item__btn:hover, .prod-item__label-link:hover, .sOrderingIndividual .form-wrap__delivery-type .custom-radio__item.dpd-item .chose-delivery-btn:hover, .table-items-box .table-sample-item__header .buy-block__label-link:hover{
+// 		--bs-btn-color: #fff;
+// 	--bs-btn-active-color: var(--bs-btn-color); 
+// 	--bs-btn-disabled-color: var(--bs-btn-color);
+
+// 	color: var(--bs-btn-hover-color);
+// }

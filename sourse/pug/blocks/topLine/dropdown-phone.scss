@@ -21,7 +21,7 @@
 
 	&__btn {
 		@extend .btn;
-		@extend .btn-block;
+		@extend .btn-block !optional;
 		@extend .btn-primary;
 		margin-top: rem(25);
 	}
@@ -30,7 +30,7 @@
 
 
 	&__link {
-		color: #273A60;
+		color: var(--bs-dark);
 		display: block;
 		margin-bottom: rem(15);
 		padding-left: rem(27);

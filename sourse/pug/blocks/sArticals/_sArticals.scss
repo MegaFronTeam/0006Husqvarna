@@ -36,7 +36,7 @@
 			align-items: center;
 			.icon{
 				color: transparent;
-				stroke: $primary;
+				stroke: var(--bs-primary);
 				font-size: 1rem;
 				margin-left: rem(10);
 			}

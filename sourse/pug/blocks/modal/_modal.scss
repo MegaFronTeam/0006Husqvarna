@@ -15,7 +15,7 @@
 	}
 
 	.mfp-close {
-		color: $primary;
+		color: var(--bs-primary);
 		font-size: 40px;
 		font-weight: 100;
 	}
@@ -85,7 +85,7 @@ a {
 
 .polite {
 	.link {
-		color: $primary;
+		color: var(--bs-primary);
 		cursor: pointer;
 		text-decoration: underline;
 
@@ -137,10 +137,11 @@ a {
 
 .fancybox-bg {
 	background-color: white;
+	@include media-breakpoint-down(md) {
 	opacity: 1 !important;
-
+	}
 	@include media-breakpoint-up(md) {
-		background: rgba($dark, 0.8);
+		background: var(--bs-dark);
 	}
 }
 
@@ -211,7 +212,7 @@ a {
 				text-decoration: none;
 
 				svg {
-					stroke: $primary;
+					stroke: var(--bs-primary);
 					color: transparent;
 					font-size: rem(17px);
 				}
@@ -222,7 +223,7 @@ a {
 					font-size: rem(16px);
 					position: relative;
 					bottom: rem(-1px);
-					color: $dark;
+					color: var(--bs-dark);
 				}
 			}
 		}
@@ -241,7 +242,7 @@ a {
 		&__props-pills-item {
 			line-height: rem(50px);
 			text-transform: uppercase;
-			color: $dark;
+			color: var(--bs-dark);
 			font-size: rem(16px);
 			cursor: pointer;
 			transition: color .2s ease-in-out;
@@ -259,7 +260,7 @@ a {
 			}
 
 			&.active {
-				color: $primary;
+				color: var(--bs-primary);
 			}
 		}
 	}

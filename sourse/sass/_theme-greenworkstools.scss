@@ -1,0 +1,98 @@
+.theme-greenworkstools{
+
+	$primary: #82bd42;
+	$primary-light: #7EB449;
+	$primary-light-hover: #a9df73;
+	$primary-hover: #429721;
+
+	--bs-primary: #{$primary};
+	--bs-primary-dark: #{$primary-hover};
+	--bs-primary-light: #{$primary-light};
+	--bs-primary-light-hover: #{$primary-light-hover};
+	--bs-primary-hover: #{$primary-hover};
+	--bs-primary-active: var(--bs-primary-hover);
+
+	--bs-dark: #2E2E2E;
+	--bs-dark-rgb: 46, 46, 46;
+	--bs-primary-rgb: 130, 189, 66;
+	--bs-primary-hover-rgb: 66, 151, 33;
+	--bs-link-color: var(--bs-primary);
+	--bs-link-color: var(--bs-primary);
+	--bs-link-hover-color: var(--bs-primary-hover);
+
+	--bs-link-color-rgb: var(--bs-primary-rgb);
+
+	--bs-link-hover-color-rgb: var(--bs-primary-hover-rgb);
+
+	// --footer-bg: #{$gray-830};
+	
+	--link-dark-color: var(--bs-primary);
+
+
+	.btn-primary{
+			--bs-btn-color: #fff;
+			--bs-btn-bg: var(--bs-primary);
+			--bs-btn-border-color: var(--bs-primary);
+			--bs-btn-hover-color: #fff;
+			--bs-btn-hover-bg: var(--bs-primary-hover);
+			--bs-btn-hover-border-color: var(--bs-primary-hover);
+			--bs-btn-focus-shadow-rgb: none;
+			--bs-btn-active-color: #fff;
+			--bs-btn-active-bg: var(--bs-primary-active);
+			--bs-btn-active-border-color: var(--bs-primary-active);
+			--bs-btn-active-shadow: none;
+			--bs-btn-disabled-color: #fff;
+			--bs-btn-disabled-bg: var(--bs-primary);
+			--bs-btn-disabled-border-color: var(--bs-primary);
+		}
+		.btn-outline-primary{
+			--bs-btn-color: var(--bs-primary);
+			--bs-btn-border-color: var(--bs-primary);
+			--bs-btn-hover-color: #fff;
+			--bs-btn-hover-bg: var(--bs-primary);
+			--bs-btn-hover-border-color: var(--bs-primary);
+			--bs-btn-focus-shadow-rgb: 76,153,0;
+			--bs-btn-active-color: #fff;
+			--bs-btn-active-bg: var(--bs-primary);
+			--bs-btn-active-border-color: var(--bs-primary);
+			--bs-btn-disabled-color: var(--bs-primary);
+			--bs-btn-disabled-bg: transparent;
+			--bs-btn-disabled-border-color: var(--bs-primary);
+			--bs-gradient: none;
+	}
+	.menu-mobile__inner{
+
+		background-color: var(--bs-dark);
+	}
+	
+	
+	.top-nav{
+		background-color: var(--bs-primary);
+	}
+	.menu-mobile__inner{
+
+		background-color: var(--bs-dark);
+		.top-nav{
+			background-color: inherit;
+		}
+	}
+
+	.dropdown__toggle .icon {
+		// color: rgba(107, 107, 107, 0.25);
+	}
+	.banner__title span,
+	.headerBlock__slide-thumb:not(.swiper-slide-thumb-active),
+	.headerBlock p,
+	.headerBlock__title span{
+		background: rgba(107, 107, 107, 0.7);
+	}
+	.headerBlock__slide-thumb.swiper-slide-thumb-active{
+		background-color:rgba( var(--bs-primary-rgb), 0.7);
+	}
+	.headerBlock__slide-thumb:hover{
+		background: rgba(255, 255, 255, 0.7);
+	}
+	.form-control:focus{
+		border-color: var(--bs-primary);
+	}
+}

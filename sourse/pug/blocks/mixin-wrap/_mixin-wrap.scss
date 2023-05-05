@@ -40,7 +40,7 @@
  //my custom code
 
  .headline {
- 	color: $dark;
+ 	color: var(--bs-dark);
  	//font-size: rem(58px);
  	font-weight: 500;
  	line-height: 120%;
@@ -75,11 +75,11 @@
  		transition: border .3s ease-in-out, box-shadow .05s ease-in-out;
 
  		&:hover {
- 			border: 1px solid $primary;
+ 			border: 1px solid var(--bs-primary-dark, #f35321);
  		}
 
  		&:active {
- 			box-shadow: inset 0px 0px 10px -5px darken($primary, 50);
+ 			box-shadow: inset 0px 0px 10px -5px var(--bs-primary-dark, #f35321);
  		}
  	}
 
@@ -94,7 +94,7 @@
 
  		&:hover,
  		&:focus {
- 			border: 1px solid $primary;
+ 			border: 1px solid var(--bs-primary);
  		}
 
  		&:focus {

@@ -1,4 +1,6 @@
 // start .sCatalog
+@use "sass:math";
+
 .prod-item {
 	background-color: #ffffff;
 	// background-color: red;
@@ -6,7 +8,7 @@
 	padding: rem(20) rem(20) rem(35);
 	box-shadow: 0px 8px 24px rgba(39, 58, 96, 0.08);
 	text-align: center;
-	line-height: (22 / 18);
+	line-height: math.div(22, 18);
 	@include mt;
 
 	&:hover {
@@ -46,7 +48,7 @@
 
 	&__title {
 		a {
-			@extend .text-dark;
+			@extend .text-dark !optional;
 		}
 
 		margin-bottom: rem(12);
@@ -63,7 +65,7 @@
 	&__price--new {
 		font-size: $h5-font-size;
 		font-weight: 400;
-		@extend .text-dark;
+		@extend .text-dark !optional;
 		text-transform: uppercase;
 		margin-bottom: rem(20);
 	}
@@ -71,7 +73,7 @@
 	&__btn {
 		@extend .btn;
 		@extend .btn-primary;
-		@extend .btn-block;
+		@extend .btn-block !optional;
 		margin-left: auto;
 		margin-right: auto;
 		max-width: rem(183);
@@ -93,11 +95,12 @@
 		display: flex;
 		justify-content: center;
 		margin-left: rem(5);
+		align-items: center;
 
 		.icon {
 			font-size: rem(18);
 			color: transparent;
-			stroke: $primary;
+			stroke: var(--bs-primary);
 			stroke-width: 1px;
 		}
 

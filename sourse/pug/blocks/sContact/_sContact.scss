@@ -198,7 +198,7 @@
 			}
 			margin-left: auto !important;
 			.form-wrap__input{
-				background-color: $primary;
+				background-color: var(--bs-primary);
 				border: none;
 				outline: none;
 				color: $white;

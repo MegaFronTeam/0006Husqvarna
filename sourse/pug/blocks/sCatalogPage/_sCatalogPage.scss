@@ -36,7 +36,7 @@
 	border-bottom: 1px solid $light;
 	&__headline{
 		@extend .h5;
-		color: $dark;
+		color: var(--bs-dark);
 		font-weight: 500;
 		text-transform: uppercase;
 		font-size: rem(18px);
@@ -54,13 +54,13 @@
 					font-weight: 300;
 					font-size: rem(16.8px);
 					//16.8 to fix
-					color: $dark;
+					color: var(--bs-dark);
 					transition: color .3s;
 				}
 				.icon{
 					margin-left: auto;
 					color: transparent;
-					stroke: $dark;
+					stroke: var(--bs-dark);
 					font-size: rem(9.5px);
 					transition: transform .3s;
 				}
@@ -74,12 +74,12 @@
 				li{
 					a{
 						font-weight: 300;
-						color: $dark;
+						color: var(--bs-dark);
 						font-size: rem(16.8px);
 						line-height: rem(27px);
 						display: block;
 						&:hover{
-							color: $primary;
+							color: var(--bs-primary);
 						}
 					}
 				}
@@ -87,10 +87,10 @@
 			&.active{
 				.sub-list-headline{
 					span{
-						color: $primary;
+						color: var(--bs-primary);
 					}
 					.icon{
-						stroke: $primary;
+						stroke: var(--bs-primary);
 						transform: rotateX(180deg);
 					}
 				}
@@ -106,16 +106,16 @@
 			& > a{
 				//background-color: red;
 				display: block;
-				color: $dark;
+				color: var(--bs-dark);
 				font-weight: 300;
 				font-size: rem(16.8px);
 				line-height: rem(24px);
 				padding: rem(4px) 0;
 				&:hover{
-					color: $primary;
+					color: var(--bs-primary);
 				}
 				&.active{
-					color: $primary;
+					color: var(--bs-primary);
 				}
 			}
 		}
@@ -176,7 +176,7 @@ body{
 		}
 		svg{
 			color: transparent;
-			stroke: $primary;
+			stroke: var(--bs-primary);
 			margin-right: rem(10px);
 		}
 
@@ -249,29 +249,29 @@ body{
 		&__headline{
 			margin-top: rem(30px);
 			margin-bottom: rem(10px);
-			color: $dark;
+			color: var(--bs-dark);
 		}
 		//checkboxes style
 		.filter-checkbox{
 			margin-bottom: rem(5px);
 			.custom-input__input:checked + .custom-input__lab{
-				background-color: $primary;
+				background-color: var(--bs-primary);
 			}
 			.custom-input__lab{
 				background-color: transparent;
-				border: 1px solid $primary;
+				border: 1px solid var(--bs-primary);
 				box-shadow: inset 0px 0px 0px 2px white;
 				&:after{
 					display: none;
 				}
 			}
 			.custom-input__text{
-				color: $dark;
+				color: var(--bs-dark);
 				font-size: rem(16px);
 			}
 			&:hover{
 				.custom-input__text{
-					color: $primary;
+					color: var(--bs-primary);
 				}
 			}
 			//disabled item
@@ -300,14 +300,14 @@ body{
 					min-width: rem(20px);
 					height: rem(20px);
 					border-radius: 50%;
-					border: 1px solid $primary;
+					border: 1px solid var(--bs-primary);
 					margin-right: rem(10px);
 					box-shadow: inset 0 0 0 2.5px white;
 					background-color: white;
 					transition: background-color .3s ease-in-out;
 				}
 				.txt-cont{
-					color: $dark;
+					color: var(--bs-dark);
 					font-size: rem(16px);
 				}
 
@@ -315,13 +315,13 @@ body{
 			&:hover{
 				.check-box-cont{
 					.txt-cont{
-						color: $primary;
+						color: var(--bs-primary);
 					}
 				}
 			}
 			.custom-radio__radio-input:checked + .check-box-cont{
 				.circle{
-					background-color: $primary;
+					background-color: var(--bs-primary);
 				}
 			}
 			&.disabled{
@@ -345,7 +345,7 @@ body{
 					.form-wrap__text, .form-wrap__text-right{
 						display: block;
 						padding-left: rem(10px);
-						color: $dark;
+						color: var(--bs-dark);
 						font-size: rem(18px);
 						text-align: left;
 					}
@@ -372,7 +372,7 @@ body{
 				width: 100%;
 				border: 1px solid $light;
 				font-size: rem(18px);
-				color: $dark;
+				color: var(--bs-dark);
 				outline: none;
 				padding: 0 rem(8px);
 				transition: transform .2s ease-in-out, border .35s ease-in-out, box-shadow .35s ease-in-out;
@@ -390,8 +390,8 @@ body{
 				}
 				&:focus{
 					transform: scale(1.05);
-					border: 1px solid $primary;
-					box-shadow: 0px 0px 3px -1px $primary;
+					border: 1px solid var(--bs-primary);
+					box-shadow: 0px 0px 3px -1px var(--bs-primary);
 				}
 			}
 			//line
@@ -402,10 +402,10 @@ body{
 				border-radius: 0;
 			}
 			.irs-bar{
-				background-color: $primary;
+				background-color: var(--bs-primary);
 			}
 			.irs-handle{
-				background-color: $primary;
+				background-color: var(--bs-primary);
 				height: rem(24px);
 				width: rem(12px);
 				border: none;
@@ -430,7 +430,7 @@ body{
 				min-width: rem(40px);
 				height: rem(20px);
 				border-radius: rem(10px);
-				border: 1px solid $primary;
+				border: 1px solid var(--bs-primary);
 				background-color: white;
 				position: relative;
 				transition: background-color .2s ease-in-out;
@@ -451,7 +451,7 @@ body{
 					width: rem(14px);
 					height: rem(14px);
 					border-radius: 50%;
-					background-color: $primary;
+					background-color: var(--bs-primary);
 					transition: background-color .3s ease-in-out, left .3s ease-in-out;
 
 				}
@@ -459,14 +459,14 @@ body{
 			.custom-input__text{
 				order: 1;
 				position: static;
-				color: $dark;
+				color: var(--bs-dark);
 				font-size: rem(16.8px);
 				&:hover{
-					color: $primary;
+					color: var(--bs-primary);
 				}
 			}
 			input:checked + .custom-input__lab{
-				background-color: $primary;
+				background-color: var(--bs-primary);
 				&:after{
 					background-color: white;
 
@@ -509,17 +509,17 @@ body{
 				align-items: center;
 				width: 100%;
 				height: 100%;
-				background-color: $primary;
+				background-color: var(--bs-primary);
 				text-transform: uppercase;
 				color: white;
 				font-weight: 300;
 				font-size: rem(18px);
 				cursor: pointer;
 				&:hover{
-					background-color: #e23f0c;
+					background-color: var(--bs-primary-dark, #f35321);
 				}
 				&:active{
-					box-shadow: inset 0 0 25px -10px darken($primary, 35);
+					box-shadow: inset 0 0 25px -10px var(--bs-primary-dark, #f35321);
 				}
 			}
 		}
@@ -568,7 +568,7 @@ body{
 	}
 }
 .banner-desr {
-	border-left: 1px solid $primary;
+	border-left: 1px solid var(--bs-primary);
 	padding-left: rem(15px);
 	font-size: rem(16.8px);
 	font-weight: 300;
@@ -615,7 +615,7 @@ body{
 	}
 	.description{
 		font-weight: 500;
-		color: $dark;
+		color: var(--bs-dark);
 		font-size: rem(18px);
 
 		margin-top: rem(15px);
@@ -630,7 +630,7 @@ body{
 	display: flex;
 
 	&__filter-btn{
-		background-color: $primary;
+		background-color: var(--bs-primary);
 		flex-grow: 1;
 		height: rem(50px);
 		display: flex;
@@ -661,12 +661,12 @@ body{
 			border-radius: 50%;
 
 			font-size: rem(18px);
-			color: $dark;
+			color: var(--bs-dark);
 		}
 		transition: background-color .3s ease-in-out, box-shadow .3s ease-in-out;
 		&:hover{
-			background-color: darken($primary, 3);
-			//box-shadow: 0px 0px 15px -3px lighten($primary, 10);
+			background-color: var(--bs-primary-dark, #f35321);
+			//box-shadow: 0px 0px 15px -3px lighten(var(--bs-primary), 10);
 			span{
 				font-weight: 400;
 			}
@@ -676,12 +676,12 @@ body{
 		}
 		&:active{
 			transition: box-shadow .05s;
-			box-shadow: 0px 0px 7px -3px lighten($primary, 10), inset 0px 0px 15px -3px darken($primary, 40);
+			box-shadow: 0px 0px 7px -3px var(--bs-primary-light, #ed8160), inset 0px 0px 15px -3px var(--bs-primary-dark, #f35321);
 		}
 	}
 	&__cross-btn{
 		cursor: pointer;
-		background-color: $dark;
+		background-color: var(--bs-dark);
 		height: rem(50px);
 		width: rem(50px);
 		margin-left: rem(15px);
@@ -694,7 +694,7 @@ body{
 		}
 		@include mt();
 		&:hover{
-			//box-shadow: 0px 0px 15px -3px lighten($dark, 15);
+			//box-shadow: 0px 0px 15px -3px lighten(var(--bs-dark), 15);
 			background-color: darken($dark, 3);
 			svg{
 				font-size: rem(30px);
@@ -718,7 +718,7 @@ body{
 	align-items: center;
 	margin-top: rem(30px);
 	padding: rem(15px) 0;
-	border-bottom: 1px solid $primary;
+	border-bottom: 1px solid var(--bs-primary);
 	.sort-price-btn{
 		margin-left: 0;
 		position: relative;
@@ -731,7 +731,7 @@ body{
 			width: calc(100% + 2px);
 			background-color: white;
 			list-style: none;
-			border: 1px solid $primary;
+			border: 1px solid var(--bs-primary);
 			span{
 				display: block;
 				text-align: left;
@@ -739,7 +739,7 @@ body{
 				line-height: rem(50px);
 				transition: color .3s ease-in-out, background-color .3s ease-in-out;
 				&:hover{
-					background-color: $primary;
+					background-color: var(--bs-primary);
 					color: white;
 				}
 			}
@@ -772,11 +772,11 @@ body{
 			display: inline-block;
 			line-height: rem(30px);
 			font-size: rem(20px);
-			color: $primary;
+			color: var(--bs-primary);
 		}
 		&.active{
-			background-color: $primary;
-			border: 1px solid $primary;
+			background-color: var(--bs-primary);
+			border: 1px solid var(--bs-primary);
 			svg{
 				color: white;
 			}
@@ -968,7 +968,7 @@ body{
 					line-height: rem(22px);
 					margin-bottom: rem(20px);
 					//split
-					color: $dark;
+					color: var(--bs-dark);
 
 					max-width: 80%;
 					@include media-breakpoint-up(lg){
@@ -1019,7 +1019,7 @@ body{
 						font-size: rem(16px);
 						font-weight: 300;
 						//split
-						color: $primary;
+						color: var(--bs-primary);
 						transition: color .3s ease-in-out, text-shadow .3s ease-in-out, font-size .3s ease-in-out;
 					}
 					svg{
@@ -1027,17 +1027,17 @@ body{
 						font-size: rem(9px);
 						margin-left: rem(10px);
 						//split
-						stroke: $primary;
+						stroke: var(--bs-primary);
 						transition: font-size .3s ease-in-out;
 					}
 					&:hover{
 						span{
-							color: darken($primary, 1);
-							text-shadow: 0 0 .7px lighten($primary, 15);
+							color: var(--bs-primary-dark, #f35321);
+							text-shadow: 0 0 .7px var(--bs-primary-light, #ed8160);
 							font-size: rem(18px);
 						}
 						svg{
-							stroke: darken($primary, 1);
+							stroke: var(--bs-primary-dark, #f35321);
 							font-size: rem(10px);
 						}
 					}
@@ -1085,7 +1085,7 @@ body{
 					.icon{
 						font-size: rem(18);
 						color: transparent;
-						stroke: $primary ;
+						stroke: var(--bs-primary) ;
 						stroke-width: 1px;
 					}
 					.icon-like{
@@ -1098,14 +1098,14 @@ body{
 					line-height: rem(19px);
 					text-decoration-line: line-through;
 					//split
-					color: $primary;
+					color: var(--bs-primary);
 				}
 				&__new-price{
 					font-size: rem(24px);
 					line-height: rem(29px);
 
 					//split
-					color: $dark;
+					color: var(--bs-dark);
 				}
 				&__buy-btn{
 					position: absolute;

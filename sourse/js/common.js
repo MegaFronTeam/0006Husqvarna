@@ -168,11 +168,11 @@ const JSCCommon = {
 
 function eventHandler() {
 	// полифил для object-fit
-	objectFitImages();
+	// objectFitImages();
 	// Picture element HTML5 shiv
-	document.createElement("picture");
+	// document.createElement("picture");
 	// для свг
-	svg4everybody({});
+	// svg4everybody({});
 
 	JSCCommon.modalCall();
 

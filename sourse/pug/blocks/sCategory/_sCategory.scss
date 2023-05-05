@@ -11,12 +11,12 @@
 			text-align: center;
 			text-decoration: none !important;
 			font-weight: 500;
-			color: $dark;
+			color: var(--bs-dark);
 			display: block;
 			text-align: center;
 			margin-bottom: rem(55);
 			&:hover{
-				color:  $primary;
+				color:  var(--bs-primary);
 			}
 		}
 		&__img-wrap{
@@ -56,12 +56,12 @@
 			@include media-breakpoint-down(md){
 				border: 1px solid $light;
 				background-color: white;
-				color: $dark;
+				color: var(--bs-dark);
 				height: rem(80px);
 				margin: 0;
 				&.active{
-					border: 1px solid $primary;
-					background-color: $primary;
+					border: 1px solid var(--bs-primary);
+					background-color: var(--bs-primary);
 					color: white;
 				}
 				display: flex;

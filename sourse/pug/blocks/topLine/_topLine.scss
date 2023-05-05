@@ -25,14 +25,14 @@
 	&__link--compare {
 		.icon {
 			color: transparent;
-			stroke: $dark;
+			stroke: var(--bs-dark);
 			stroke-width: 1px;
 		}
 
 		&:hover {
 			.icon {
 
-				color: $dark;
+				color: var(--bs-dark);
 			}
 		}
 	}

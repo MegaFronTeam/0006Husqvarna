@@ -98,7 +98,7 @@
 			}
 
 			// margin-left: rem(30px);
-			color: $dark;
+			color: var(--bs-dark);
 			font-size: rem(16.8px);
 			line-height: rem(22px);
 
@@ -176,7 +176,7 @@
 		.old-price {
 			text-decoration-line: line-through;
 			text-transform: uppercase;
-			color: #f35321;
+			color: var(--bs-primary-dark, #f35321);
 			//color: blue;
 			white-space: nowrap;
 		}
@@ -215,7 +215,7 @@
 		line-height: 20px;
 
 		svg {
-			stroke: $primary;
+			stroke: var(--bs-primary);
 			font-size: rem(20px);
 		}
 
@@ -225,7 +225,7 @@
 			transform: scale(1.1);
 
 			svg {
-				stroke: darken($primary, 10);
+				stroke: var(--bs-primary-dark, #f35321);
 			}
 		}
 	}
@@ -266,7 +266,7 @@
 		&.discount,
 		&.promo {
 			span {
-				color: $primary;
+				color: var(--bs-primary);
 			}
 		}
 

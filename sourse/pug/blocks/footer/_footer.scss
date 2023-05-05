@@ -1,9 +1,11 @@
+@use "sass:math";
+
 .footer {
 	margin-top: rem(30);
-	line-height: (22 / 18);
+	line-height: math.div(22, 18);
 
 	&__body {
-		background-color: $dark;
+		background-color: var(--bs-dark);
 		color: rgba(255, 255, 255, 0.5);
 		font-weight: 300;
 		padding-top: rem(65);
@@ -42,7 +44,7 @@
 
 		// text-decoration: none !important;
 		&:hover {
-			color: $primary;
+			color: var(--bs-primary);
 		}
 	}
 

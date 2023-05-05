@@ -39,16 +39,16 @@
 			margin-bottom: rem(15px);
 			margin-right: rem(15px);
 
-			color: $dark;
+			color: var(--bs-dark);
 			font-weight: 300;
 			font-size: rem(18px);
 			@include mt();
 			&:hover{
-				border: 1px solid $primary;
+				border: 1px solid var(--bs-primary);
 			}
 			&.active{
-				border: 1px solid $primary;
-				color: $primary;
+				border: 1px solid var(--bs-primary);
+				color: var(--bs-primary);
 			}
 		}
 	}
@@ -82,12 +82,12 @@
 					margin: 0 rem(15px);
 				}
 
-				background-color: $dark;
+				background-color: var(--bs-dark);
 				&:hover{
-					background-color: darken($primary, 5);
+					background-color: var(--bs-primary-dark, #f35321);
 				}
 				&.swiper-pagination-bullet-active{
-					background-color: $primary;
+					background-color: var(--bs-primary);
 				}
 			}
 		}
@@ -102,13 +102,13 @@
 			bottom: rem(-60px);
 			.icon{
 				color: transparent;
-				stroke: $dark;
+				stroke: var(--bs-dark);
 			}
 			@include mt();
 			&:hover{
 				transform: scale(1.2);
 				.icon{
-					stroke: $primary;
+					stroke: var(--bs-primary);
 				}
 			}
 		}
@@ -157,7 +157,7 @@
 					line-height: rem(25px);
 					font-weight: bold;
 					text-transform: uppercase;
-					background-color: $dark;
+					background-color: var(--bs-dark);
 					color: white;
 					margin-bottom: rem(3px);
 				}
@@ -165,7 +165,7 @@
 			.timer-block{
 				width: rem(250px);
 				height: rem(60px);
-				background-color: $dark;
+				background-color: var(--bs-dark);
 				padding: 0 rem(10px) 0 rem(15px);
 
 				display: flex;

@@ -188,11 +188,11 @@ mixin catalogGoodsTableItems()
 		+item-prod-table-sample('d-xl-none d-block' , 'category-6-png.png')
 		+item-prod-table-sample('', 'category-6-png.png', 'star1.png', 'Бестселлер', '#0063da')(class="bestseller-item white-colored-item" style="background-color: #0063da")
 		+item-prod-table-sample('','category-6-png.png', 'jStar.png', 'Новинка', '#18B58C')(class="new-item white-colored-item" style="background-color: #18B58C")
-		+item-prod-table-sample('','category-6-png.png', 'lightning2.png','Акция', '#F35321', '#18B58C')(class="action-item white-colored-item" style="background-color: #F35321")
+		+item-prod-table-sample('','category-6-png.png', 'lightning2.png','Акция', 'var(--bs-primary)', '#18B58C')(class="action-item white-colored-item" style="background-color: var(--bs-primary)")
 		+item-prod-table-sample('','category-6-png.png', 'star1.png','Акция', '#e83e8c')(class="action-item white-colored-item" style="background-color: #e83e8c")
 		//#0063da
 
-mixin item-prod-table-sample(showMoreBtnClasses='', i, imgName, spanTxt, spanBackground, btnBackground='#F35321')
+mixin item-prod-table-sample(showMoreBtnClasses='', i, imgName, spanTxt, spanBackground, btnBackground='var(--bs-primary)')
 	+b.table-sample-item&attributes(attributes)
 		+e.header
 			if imgName
@@ -268,7 +268,7 @@ mixin item-prod-table-sample(showMoreBtnClasses='', i, imgName, spanTxt, spanBac
 				span Макс. давление
 				span Макс. давление	4,6 бар
 
-mixin item-prod-table-sample-Charless(showMoreBtnClasses='', i, iconSrc, spanTxt, spanBackground, btnBackground='#F35321')
+mixin item-prod-table-sample-Charless(showMoreBtnClasses='', i, iconSrc, spanTxt, spanBackground, btnBackground='var(--bs-primary)')
 	+b.table-sample-item&attributes(attributes)
 		+e.header
 			if imgName
@@ -314,7 +314,7 @@ mixin catalogGoodsSquareItems()
 			.col-12.col-sm-6.col-lg-4.item-prod-parent
 				+item-prod-multiBlock('trimer-img.png', false)(class="catalog-prod-item")
 			.col-12.col-sm-6.col-lg-4.item-prod-parent
-				+item-prod-multiBlock('trimer-img.png', false, undefined, 'action-item', '#18B58C' )(class="catalog-prod-item white-colored-item" style="background-color: #F35321; background-image: url(img/@2x/lightning.png)")
+				+item-prod-multiBlock('trimer-img.png', false, undefined, 'action-item', '#18B58C' )(class="catalog-prod-item white-colored-item" style="background-color: var(--bs-primary); background-image: url(img/@2x/lightning.png)")
 					+e.SPAN.mod-txt Акция
 			.col-12.col-sm-6.col-lg-4.item-prod-parent
 				+item-prod-multiBlock('trimer-img.png', false, undefined, 'action-item')(class="catalog-prod-item white-colored-item" style="background-color: pink; background-image: url(img/@2x/star1.png)")

@@ -95,7 +95,7 @@
 			opacity: 0;
 			@include mt();
 			&:hover{
-				stroke: $primary;
+				stroke: var(--bs-primary);
 			}
 		}
 		.prod-item__title{
@@ -154,7 +154,7 @@
 			text-align: center;
 			text-decoration: none;
 			.icon{
-				stroke: $primary;
+				stroke: var(--bs-primary);
 				color: transparent;
 				font-size: rem(15px);
 				line-height: rem(19px);
@@ -165,15 +165,15 @@
 				font-weight: 300;
 				font-size: rem(16.3px);
 				line-height: rem(19px);
-				color: $dark;
+				color: var(--bs-dark);
 				@include mt();
 			}
 			&:hover{
 				span{
-					color: $primary;
+					color: var(--bs-primary);
 				}
 				.icon{
-					color: rgba($primary, .25);
+					color: rgba(var(--bs-primary), .25);
 				}
 			}
 
@@ -182,7 +182,7 @@
 
 				}
 				.icon{
-					color: $primary;
+					color: var(--bs-primary);
 				}
 			}
 		}
@@ -199,7 +199,7 @@
 			font-weight: 300;
 			font-size: rem(18px);
 			line-height: rem(22px);
-			color: $dark;
+			color: var(--bs-dark);
 			height: rem(50px);
 			//background-color: rgba(red, .3);
 

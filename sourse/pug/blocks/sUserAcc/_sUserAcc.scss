@@ -26,7 +26,7 @@
 		margin-bottom: rem(10px);
 		cursor: pointer;
 		&.active{
-			color: $primary;
+			color: var(--bs-primary);
 		}
 
 		margin-right: rem(30px);
@@ -85,19 +85,19 @@
 				font-size: rem(16.8px);
 			}
 			span:last-child{
-				color: $dark;
+				color: var(--bs-dark);
 			}
 		}
 		.change-data-link{
 			display: inline-block;
 			margin-top: rem(10px);
 			margin-bottom: rem(30px);
-			color: $primary;
+			color: var(--bs-primary);
 			cursor: pointer;
 			transition: color .3s ease-in-out;
 			&:hover{
 				text-decoration: underline;
-				color: darken($primary, 10);
+				color: var(--bs-primary-dark, #f35321);
 			}
 		}
 		//orders (all css up to +orderItemContent())
@@ -123,7 +123,7 @@
 			}
 		}
 		&__order-item-number{
-			color: $dark;
+			color: var(--bs-dark);
 			position: absolute;
 			top: rem(15px);
 			left: rem(20px);
@@ -161,7 +161,7 @@
 
 			font-size: rem(16px);
 			@include media-breakpoint-up(md){
-				color: $dark;
+				color: var(--bs-dark);
 				width: rem(110px);
 				position: static;
 				font-size: rem(18px);
@@ -175,7 +175,7 @@
 				color: $green;
 			}
 			&.fee-expect{
-				color: $primary;
+				color: var(--bs-primary);
 			}
 			margin-left: auto;
 			margin-right: rem(20px);
@@ -194,11 +194,11 @@
 			transition: transform .3s ease-in-out;
 			svg{
 				color: transparent;
-				stroke: $dark;
+				stroke: var(--bs-dark);
 				font-size: rem(11px);
 				cursor: pointer;
 				&:hover{
-					stroke: $primary;
+					stroke: var(--bs-primary);
 				}
 			}
 		}
@@ -211,7 +211,7 @@
 		.tab-content__order-item-icon{
 			transform: rotate(180deg);
 			svg{
-				stroke: $primary;
+				stroke: var(--bs-primary);
 			}
 		}
 	}
@@ -318,7 +318,7 @@
 					}
 					.name-block{
 						text-align: center;
-						color: $dark;
+						color: var(--bs-dark);
 						max-width: rem(180px);
 						margin-top: rem(10px);
 						margin-left: auto;
@@ -353,7 +353,7 @@
 			font-weight: 400;
 		}
 		&__prors-item.result{
-			color: $dark;
+			color: var(--bs-dark);
 		}
 	}
 }

@@ -82,9 +82,9 @@
 	}
 	.swiper-slide-thumb-active{
 		.foto-galery-container__image-pill{
-			border: 1px solid $primary;
+			border: 1px solid var(--bs-primary);
 			&:hover {
-				border: 1px solid $primary;
+				border: 1px solid var(--bs-primary);
 			}
 		}
 	}
@@ -154,7 +154,7 @@
 		font-size: rem(16px);
 		line-height: rem(50px);
 		text-transform: uppercase;
-		color: $dark;
+		color: var(--bs-dark);
 		padding-right: rem(30px);
 		cursor: pointer;
 		span{
@@ -163,7 +163,7 @@
 			left: calc(100% - 1.66667rem);
 			top: rem(10px);
 			font-weight: 300;
-			color: $primary;
+			color: var(--bs-primary);
 			font-size: rem(14px);
 			line-height: rem(14px);
 		}
@@ -171,15 +171,15 @@
 			//padding-right: rem(10px);
 		}
 		&.active{
-			color: $primary;
+			color: var(--bs-primary);
 		}
 		@include mt();
 		&:hover{
 			@include media-breakpoint-up(xl){
 				//transform: scale(1.1);
 			}
-			color: $primary;
-			text-shadow: 0 0 .3px lighten($primary, 15);
+			color: var(--bs-primary);
+			text-shadow: 0 0 .3px var(--bs-primary-light, #ed8160);
 		}
 	}
 	// content
@@ -266,7 +266,7 @@
 	&__pdf{
 		min-width: rem(32.5px);
 		height: rem(40px);
-		background-color: $primary;
+		background-color: var(--bs-primary);
 		color: white;
 		text-align: center;
 		font-weight: 500;
@@ -278,7 +278,7 @@
 		font-weight: 300;
 		font-size: rem(16px);
 		line-height: rem(20px);
-		color: $dark;
+		color: var(--bs-dark);
 	}
 
 	&__green-btn{
@@ -406,10 +406,10 @@
 			margin-right: rem(10px);
 		}
 		.icon-small-star{
-			color: $primary;
+			color: var(--bs-primary);
 		}
 		.icon-small-star-empty{
-			stroke: $primary;
+			stroke: var(--bs-primary);
 			color: transparent;
 		}
 	}
@@ -450,7 +450,7 @@
 	&__company-logo-small{
 		.icon{
 			font-size: rem(28px);
-			color: $dark;
+			color: var(--bs-dark);
 			margin-right: rem(5px);
 		}
 	}
@@ -458,7 +458,7 @@
 		font-weight: 500;
 		font-size: rem(18px);
 		line-height: 24px;
-		color: $dark;
+		color: var(--bs-dark);
 	}
 	&__to-respont-txt{
 		padding-left: rem(29px);
@@ -533,10 +533,10 @@
 		cursor: pointer;
 		.icon-small-star-empty{
 			color: transparent;
-			stroke: $primary;
+			stroke: var(--bs-primary);
 		}
 		.icon-small-star{
-			color: $primary;
+			color: var(--bs-primary);
 		}
 		&.no-empty-star{
 			.icon-small-star-empty{
@@ -549,7 +549,7 @@
 			}
 			&.hover-paint-js{
 				.icon-small-star-empty{
-					color: rgba($primary, .25);
+					color: rgba(var(--bs-primary), .25);
 				}
 			}
 		}
@@ -584,7 +584,7 @@
 		display: inline-block;
 		line-height: rem(30px);
 		padding: 0 rem(10px);
-		background-color: $primary;
+		background-color: var(--bs-primary);
 		color: white;
 		font-weight: 300;
 		font-size: rem(14px);
@@ -592,7 +592,7 @@
 	}
 	&__prod-name{
 		display: block;
-		color: $dark;
+		color: var(--bs-dark);
 		font-weight: 500;
 		font-size: rem(35.5px);
 		line-height: rem(43px);
@@ -642,7 +642,7 @@
 		display: block;
 		.icon {
 			color: transparent;
-			stroke: $primary;
+			stroke: var(--bs-primary);
 			font-size: rem(9px);
 			margin-left: rem(10px);
 			@include mt();
@@ -738,7 +738,7 @@
 		width: rem(35px);
 		text-align: center;
 		.icon{
-			color: $primary;
+			color: var(--bs-primary);
 		}
 		.icon-car{
 			font-size: rem(17.5px);
@@ -809,13 +809,13 @@
 			line-height: rem(19px);
 			text-decoration-line: line-through;
 			text-transform: uppercase;
-			color: $primary;
+			color: var(--bs-primary);
 		}
 		.new-price{
 			font-size: rem(36px);
 			line-height: rem(43px);
 			text-transform: uppercase;
-			color: $dark;
+			color: var(--bs-dark);
 		}
 	}
 

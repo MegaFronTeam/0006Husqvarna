@@ -73,7 +73,7 @@
 	}
 
 	&__link {
-		color: #273A60;
+		color: var(--bs-dark);
 	}
 
 	@include media-breakpoint-up(xl) {}

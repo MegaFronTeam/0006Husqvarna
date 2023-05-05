@@ -1,0 +1,153 @@
+@use "sass:math";
+
+.icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
+
+.icon-6-dots-icon {
+	font-size:math.div(19,10)*1rem;
+	width: math.div(18,19)*1em;
+}
+.icon-9-dots-icon {
+	font-size:math.div(19,10)*1rem;
+	width: math.div(18,19)*1em;
+}
+.icon-action-item {
+	font-size:math.div(451,10)*1rem;
+	width: math.div(261,451)*1em;
+}
+.icon-angle-left {
+	font-size:math.div(14,10)*1rem;
+	width: math.div(8,14)*1em;
+}
+.icon-arrow-top-left {
+	font-size:math.div(21,10)*1rem;
+	width: math.div(28,21)*1em;
+}
+.icon-basket {
+	font-size:math.div(22,10)*1rem;
+	width: math.div(26,22)*1em;
+}
+.icon-basket-alt {
+	font-size:math.div(22,10)*1rem;
+	width: math.div(26,22)*1em;
+}
+.icon-blank {
+	font-size:math.div(41,10)*1rem;
+	width: math.div(30,41)*1em;
+}
+.icon-car {
+	font-size:math.div(18,10)*1rem;
+	width: math.div(31,18)*1em;
+}
+.icon-card {
+	font-size:math.div(31,10)*1rem;
+	width: math.div(42,31)*1em;
+}
+.icon-check {
+	font-size:math.div(27,10)*1rem;
+	width: math.div(27,27)*1em;
+}
+.icon-check-common {
+	font-size:math.div(19,10)*1rem;
+	width: math.div(27,19)*1em;
+}
+.icon-chevron-down {
+	font-size:math.div(8,10)*1rem;
+	width: math.div(14,8)*1em;
+}
+.icon-chevron-right {
+	font-size:math.div(14,10)*1rem;
+	width: math.div(8,14)*1em;
+}
+.icon-clock {
+	font-size:math.div(19,10)*1rem;
+	width: math.div(19,19)*1em;
+}
+.icon-coins {
+	font-size:math.div(40,10)*1rem;
+	width: math.div(41,40)*1em;
+}
+.icon-compare {
+	font-size:math.div(18,10)*1rem;
+	width: math.div(17,18)*1em;
+}
+.icon-cross {
+	font-size:math.div(22,10)*1rem;
+	width: math.div(22,22)*1em;
+}
+.icon-email {
+	font-size:math.div(14,10)*1rem;
+	width: math.div(19,14)*1em;
+}
+.icon-exit {
+	font-size:math.div(16,10)*1rem;
+	width: math.div(15,16)*1em;
+}
+.icon-filter-bar-icon {
+	font-size:math.div(25,10)*1rem;
+	width: math.div(30,25)*1em;
+}
+.icon-gray-logo {
+	font-size:math.div(200,10)*1rem;
+	width: math.div(183,200)*1em;
+}
+.icon-house {
+	font-size:math.div(21,10)*1rem;
+	width: math.div(21,21)*1em;
+}
+.icon-like {
+	font-size:math.div(16,10)*1rem;
+	width: math.div(17,16)*1em;
+}
+.icon-like-alt {
+	font-size:math.div(15,10)*1rem;
+	width: math.div(17,15)*1em;
+}
+.icon-mark {
+	font-size:math.div(18,10)*1rem;
+	width: math.div(12,18)*1em;
+}
+.icon-plane {
+	font-size:math.div(25,10)*1rem;
+	width: math.div(26,25)*1em;
+}
+.icon-sand-clock {
+	font-size:math.div(34,10)*1rem;
+	width: math.div(20,34)*1em;
+}
+.icon-small-blue-logo {
+	font-size:math.div(26,10)*1rem;
+	width: math.div(22,26)*1em;
+}
+.icon-small-star {
+	font-size:math.div(15,10)*1rem;
+	width: math.div(16,15)*1em;
+}
+.icon-small-star-empty {
+	font-size:math.div(15,10)*1rem;
+	width: math.div(16,15)*1em;
+}
+.icon-star-bestseller {
+	font-size:math.div(451,10)*1rem;
+	width: math.div(295,451)*1em;
+}
+.icon-star-new-item {
+	font-size:math.div(365,10)*1rem;
+	width: math.div(295,365)*1em;
+}
+.icon-tel {
+	font-size:math.div(17,10)*1rem;
+	width: math.div(17,17)*1em;
+}
+.icon-user {
+	font-size:math.div(25,10)*1rem;
+	width: math.div(24,25)*1em;
+}
+.icon-zoom {
+	font-size:math.div(20,10)*1rem;
+	width: math.div(21,20)*1em;
+}
