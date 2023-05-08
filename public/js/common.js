@@ -184,11 +184,6 @@ function eventHandler() {
 
 	JSCCommon.inputMask();
 
-	// JSCCommon.CustomInputFile();
-	// добавляет подложку для pixel perfect
-	$(".main-wrapper").after('<div class="screen" style="background-image: url(screen/Catalog-List-1440.png);"></div>')
-	// /добавляет подложку для pixel perfect
-
 
 
 	// const url = document.location.href;
@@ -698,11 +693,6 @@ function eventHandler() {
 	$(".mobile-dropdown-block__head").click(function () {
 		$(this).parents(".mobile-dropdown-block").removeClass('active')
 	})
-	var isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
-	if (isIE11) {
-		$("body").prepend(`<p   class="browsehappy container">К сожалению, вы используете устаревший браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_blank">обновите ваш браузер</a>, чтобы улучшить производительность, качество отображаемого материала и повысить безопасность.</p>`)
-
-	}
 };
 if (document.readyState !== 'loading') {
 	eventHandler();
