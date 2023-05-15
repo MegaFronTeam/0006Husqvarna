@@ -2,6 +2,16 @@
 	// start .sContact
 	.sContact {
 		//padding: 0 !important;
+		.row{
+			position: relative;
+		}
+		@include media-breakpoint-up(lg) {
+			.props__sert-col {
+				left: 30%;
+				position: absolute;
+				top: 0;
+			}
+		}
 		@include media-breakpoint-up(xl) {
 			padding: rem(22px) 0 rem(65px) 0 !important;
 		}
