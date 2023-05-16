@@ -253,22 +253,22 @@ function eventHandler() {
 
 
 	}
-	var galleryThumbs = new Swiper('.gallery-thumbs', {
-		spaceBetween: 0,
-		slidesPerView: 'auto',
-		loop: true,
-		freeMode: true,
-		loopedSlides: 5, //looped slides should be the same
-		watchSlidesVisibility: true,
-		watchSlidesProgress: true,
-	});
+	// var galleryThumbs = new Swiper('.gallery-thumbs', {
+	// 	spaceBetween: 0,
+	// 	slidesPerView: 'auto',
+	// 	loop: true,
+	// 	freeMode: true,
+	// 	loopedSlides: 5, //looped slides should be the same
+	// 	watchSlidesVisibility: true,
+	// 	watchSlidesProgress: true,
+	// });
 
 	var galleryTop = new Swiper('.gallery-top', {
 		...defaultSl,
 		spaceBetween: 0,
-		thumbs: {
-			swiper: galleryThumbs,
-		},
+		// thumbs: {
+		// 	swiper: galleryThumbs,
+		// },
 	});
 	$(".sCatalog").each(function () {
 
