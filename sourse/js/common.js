@@ -263,12 +263,22 @@ function eventHandler() {
 	// 	watchSlidesProgress: true,
 	// });
 
-	var galleryTop = new Swiper('.gallery-top', {
+	let galleryTop = new Swiper('.gallery-top', {
 		...defaultSl,
-		spaceBetween: 0,
-		// thumbs: {
-		// 	swiper: galleryThumbs,
-		// },
+		spaceBetween: 30,
+		slidesPerView: 1,
+
+		//
+		navigation: {
+			nextEl: $(this).find('.swiper-next'),
+			prevEl: $(this).find('.swiper-prev'),
+		},
+		//
+		pagination: {
+			el: $(this).find('.swiper-pagination'),
+			type: 'bullets',
+			clickable: true,
+		},
 	});
 	$(".sCatalog").each(function () {
 
