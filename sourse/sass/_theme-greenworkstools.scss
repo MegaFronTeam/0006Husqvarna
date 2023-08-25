@@ -20,6 +20,8 @@
 	--bs-link-color: var(--bs-primary);
 	--bs-link-hover-color: var(--bs-primary-hover);
 
+
+
 	--bs-link-color-rgb: var(--bs-primary-rgb);
 
 	--bs-link-hover-color-rgb: var(--bs-primary-hover-rgb);
@@ -28,8 +30,11 @@
 	
 	--link-dark-color: var(--bs-primary);
 
+  --bs-form-select-bg-img: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$primary}' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/></svg>") !default;
 
-	.btn-primary{
+
+
+  .btn-primary{
 			--bs-btn-color: #fff;
 			--bs-btn-bg: var(--bs-primary);
 			--bs-btn-border-color: var(--bs-primary);

@@ -890,3 +890,13 @@ iframe {
 		stroke-width: 1px;
 	}
 }
+
+.display-filter-bar{
+  select{
+	width: auto;
+	box-shadow: none !important;
+	&:focus{
+	  border-color: var(--bs-primary);
+	}
+  }
+}

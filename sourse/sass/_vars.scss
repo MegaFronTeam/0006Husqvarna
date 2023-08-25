@@ -413,7 +413,8 @@ $custom-radio-indicator-border-radius: 50% !default;
 $custom-switch-width: $custom-control-indicator-size * 1.75 !default;
 $custom-switch-indicator-border-radius: $custom-control-indicator-size * 0.5 !default;
 // $custom-switch-indicator-size:                  calc(#{$custom-control-indicator-size} - #{$custom-control-indicator-border-width * 4}) !default;
-
+$form-select-indicator-color:       $primary;
+$form-select-indicator:             url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$form-select-indicator-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/></svg>") !default;
 $custom-select-padding-y: $input-padding-y !default;
 $custom-select-padding-x: $input-padding-x !default;
 $custom-select-font-family: $input-font-family !default;
@@ -427,7 +428,7 @@ $custom-select-disabled-color: $gray-600 !default;
 $custom-select-bg: $input-bg !default;
 $custom-select-disabled-bg: $gray-200 !default;
 $custom-select-bg-size: 8px 10px !default; // In pixels because image dimensions
-$custom-select-indicator-color: $gray-800 !default;
+$custom-select-indicator-color: $primary;
 $custom-select-indicator: str-replace(url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='#{$custom-select-indicator-color}' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e"), "#", "%23") !default;
 $custom-select-background: $custom-select-indicator no-repeat right $custom-select-padding-x center / $custom-select-bg-size !default; // Used so we can have multiple background elements (e.g., arrow and feedback icon)
 
